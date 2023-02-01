@@ -1,0 +1,333 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos HOME */
+
+/*estilos de header*/
+
+header{
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1{
+    background-color: orange;
+    font-size: 400%;
+    text-align: center;
+    
+}
+
+header nav ul{
+    background-color: none;
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li{
+    background-color: none;
+    padding: 5px;
+    
+}
+
+/* estilos banner principal */
+
+.principalBanner{
+    height: 400px;
+    padding: 0px;
+    background-image: url(../img/MainBannerWhite.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    align-content: center;
+}
+
+/* estilos de main */
+
+main{
+    background-color: rgb(230, 232, 233);
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main h2{
+    background-color: rgb(230, 232, 233);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+main p{
+    background-color: rgb(230, 232, 233);
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+
+    
+}
+
+/* estilos de HIGHLIGHTS en Home */
+
+.highlightsHome{
+    background-color:white;
+    padding: 10px;
+    padding-top: 20px;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+}
+
+.productosHome{
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    height: fit-content;
+}
+
+.productosHome h3{
+    
+    background-color: white;
+    text-align: center;
+    
+}
+
+.productoUno{
+    height: 500px;
+    background-color: white;
+    padding: 0px;
+    
+}
+
+/* estilos de HighlightsDos en Home*/
+
+.highlightsHomeDos{
+    display: none;
+   
+}
+
+
+/* estilos de FOOTER */
+
+footer{
+    background-color: orange;
+    text-align: center;
+    padding: 100px;
+    justify-items: auto;
+}
+
+footer nav ul li{
+    margin: 10px;
+    list-style: none;
+}
+
+footer form{
+    margin: 10px;
+}
+
+/* Estilos de Página ProductList */
+
+.productListUno{
+    background-color: aqua;
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    
+}
+
+.productListDos{
+    
+    display: none;
+}
+
+
+
+/* estilos de página CONTACT */
+
+
+.contactForm{
+    padding: 20px;
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contactForm h2{
+    text-align: center;
+}
+
+.contactForm p{
+    text-align: center;
+}
+
+.contactForm button{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+/* Estilos página ABOUT*/
+
+.about{
+    height: fit-content;
+    background-color: none;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.about div h2{
+    background-color: none;
+    font-size: x-large;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.about div p{
+    background-color: none;
+    padding-left: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    font-size: larger;
+    text-align: left;
+    
+}
+
+.aboutText{
+
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* estilos ProductPage */
+
+h3{
+    background-color: none;
+    padding-top: 30px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.productPage{
+    height: fit-content;
+    background-color: none;
+    margin: 0px;
+    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.productPage img{
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.productPage p{
+    background-color: none;
+    font-size: larger;
+    margin: 20px;
+
+}
+
+.productPage div{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-content: flex-end;
+}
+.productPage div h2{
+    background-color: none ;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* para chat de soporte*/
+
+.item-fixed{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+/* pantallas de tablet */
+
+@media screen and (min-width: 600px){
+    
+    /* Estilos Header */
+    
+    
+    /* estilos de ProductList */
+    
+    .productListDos{
+        visibility: visible;
+        padding: 10px;
+        padding-bottom: 40px;
+        background-color: white;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;  
+        height: fit-content;
+    }
+
+}
+/* estilos de pantallas de escritorio */
+
+@media screen and (min-width: 1024px){
+
+.highlightsHomeDos{
+    display: grid;
+    grid-template-columns: 3fr 1fr;  
+    grid-template-rows: 2fr 1fr;
+   
+}
+
+.hijoUno{
+    background-color: red;
+}
+
+.hijoDos{
+    background-color: blue;
+}
+
+.hijoTres{
+    background-color: yellow;
+}
+}
