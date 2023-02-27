@@ -1,0 +1,66 @@
+//importar los archivos secundarios
+@import "../base/mixin.scss";
+@import "../vars/variabes";
+@import "../base/listas";
+
+/*estilos para Lista de Productos en pantallas de escritorio */
+
+@media (max-width: 1820px){
+
+.grid-dos{
+    width: 100%;
+    background-color: red;
+
+    @include grid-dos;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+    h2{
+        margin-top: 6rem;
+        background-color: red;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.lista-productos{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    height: fit-content;
+    
+    .vista-responsive-uno{
+        padding: 2rem;
+    }
+    .vista-responsive-dos{
+        padding: 2rem;
+    }
+    .vista-responsive-tres{
+        padding: 2rem;
+    }
+    .vista-responsive-cuatro{
+        padding: 2rem;
+    }
+}
+
+section h3{
+    text-align: center;
+    background-color: $color-tres;
+}
+}
+
+
+/*estilos Lista de Productos para tabletas */
+
+@media (max-width: 1151px){
+
+    .grid-dos{
+    display: none;
+}
+}

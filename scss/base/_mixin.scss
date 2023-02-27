@@ -1,0 +1,42 @@
+//mixin sin parámetros
+
+@mixin display-productos {
+    background-color: $color-uno;
+    padding: 10px;
+    padding-top: 20px;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    font-size: larger; 
+    h2{
+        color: $color-cinco;
+    }
+    h3{
+        color:$color-cinco;
+        background-color: $color-uno;
+        font-size:xx-large;
+    }
+}  
+
+
+@mixin grid-uno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 1fr;
+}
+
+@mixin grid-dos{
+    display: grid;
+    grid-template-columns: 4fr 3fr;  
+    grid-template-rows: 1fr, 1fr;
+}
+
+@mixin tarjetas-producto{
+    height: 50px;
+    img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+}

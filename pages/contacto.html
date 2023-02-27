@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Link de Bootstrap-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+   <!--Link Mi CSS-->
+   <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>The E-COMMERCE</h1></a>
+          <nav class="navbar navbar-expand-lg ">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="/img/LOGO_-04.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="productList.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">SALE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        INGRESAR
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">LOGIN</a></li>
+                        <li><a class="dropdown-item" href="about.html">NOSOTROS</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../pages/contact.html">CONTACTO</a></li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+      </header>
+
+    <div>
+        <section id="contact">
+  
+            <h1 class="section-header">CONTACTO</h1>
+        
+         <div class="contact-wrapper">
+        
+        <!-- izquierda de página de contacto --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NOMBRE" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MENSAJE" name="message" required></textarea>
+            
+            <button class="btn btn-secondary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Derecha pñagina de contacto --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Ciudad, Estado</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 589-2378</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">contacto@theecommerce.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+              
+      
+            </div>
+          
+        </div>
+        
+        </section>  
+    </div>
+
+    <footer>
+
+        <section class="footer-info">
+          <img class="footer-info-img" src="../img/LOGO_-12.png" alt="">
+         
+          <section> 
+            <h2>ÚNETE</h2>
+            <p>Para mayor información suscríbete a nuestro boletín</p>
+            <div class="input-group mb-3 justify-content-center">
+              <input type="text" class="form-control-sm" placeholder="Ingresar e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+            </div>
+          </section>
+  
+          <section class="footer-info-dos">
+            <h2>ENLACES</h2>
+              <div>
+                  <nav>
+                      <ul>
+                      <li><a href="../pages/contacto.html">CONTACTO</a> 
+                      </li>
+                      <li><a href="about.html">NOSOTROS</a> </li>
+                      <li>TÉRMINOS & CONDICIONES</li>
+                      </ul>
+                   </nav>
+              </div>
+          </section>
+  
+          <section class="footer-info-tres">
+            <h2>GET IN TOUCH</h2>
+            <H6>contáctanos a info@email.com</H6>
+            <section class="redes-sociales">
+              <img src="../img/twitter-logo-bw.png" alt="twitter-logo">
+              <img src="../img/instagram-logo-bw.png" alt="instagram-logo">
+              <img src="../img/youtube-logo-bw.png" alt="">
+              <h6>Cr 27C # 43A-135</h6>
+            </section>
+          </section>
+        </section> 
+          
+        <section class="medio-pago-uno">
+            <div class="medio-pago">
+              <h6>Medio de pago aceptado</h6>
+              <img src="../img/bitcoin-logo-png.webp" alt="Bitcoin">
+            </div>
+        </section>
+        <div class="copyright">&copy; Todos los derechos reservados</div>
+  
+  </footer>
+
+<!--Script Bootstrap JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

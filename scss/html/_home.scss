@@ -1,0 +1,284 @@
+//importar los archivos secundarios
+@import "../base/mixin.scss";
+@import "../vars/variabes";
+@import "../base/listas";
+
+/* estilos banner principal */
+
+.principalBanner{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    background-repeat: repeat;
+    background-size: contain;
+    align-content: center;
+    img{
+        width: 100%;
+    }
+
+}
+
+/* estilos main */
+
+main{
+    background-color: $color-uno;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: $color-cinco;
+        background-color: $color-uno;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    p{
+        color: $color-cinco;
+        background-color: $color-uno;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        width: 30rem; 
+        font-size: 1.2rem;
+    }
+}
+
+/* estilos de DESTACADOS en Home */
+
+/* estilos de tarjeta en productos destacados*/
+
+.imgBx-card img{
+    margin-bottom: 108px;
+    padding-top: 105px;
+    padding-right: 100px;
+    position: relative;
+    width: 500px;
+    transform: rotate(-30deg);
+    left: -50px;
+    transition: .9s linear;
+}
+
+.imgRolex-card img{
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+.imgRolex-card h5{
+    padding-top: 105px;
+}
+
+.body-tarjeta-producto{
+    padding-top: 130px;
+}
+
+.display-productos{
+    @include display-productos;
+}
+
+.tarjetas-producto{
+    @include tarjetas-producto;
+}
+
+.productosHome{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    height: fit-content;
+    
+}
+
+section h3{
+    text-align: center;
+    background-color: $color-tres;
+}
+
+
+/*estilos para Home en pantallas de escritorio */
+
+@media only screen and (min-width: 1158px) and (max-width: 1820px){
+
+    .grid-uno{
+        @include grid-uno;
+        background-color: white;
+        div img{
+            margin: 5rem;
+        }
+
+        .hijoUno{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: $color-cinco;
+            
+            h3{
+                padding-top: 5rem;
+                margin: 5rem;
+                font-weight: bolder;
+            }
+            img{
+                background-color: $color-cuatro;
+                border-radius: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30rem;
+                height: auto;
+                align-items: center;
+                
+            }
+            p{
+                padding: 3rem;
+                font-size: larger;
+                font-weight: bolder;
+                text-align: center;    
+            }
+        }
+        
+        .hijoDos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: $color-cuatro;
+            
+            h3{
+                padding-top: 5rem;
+                margin: 5rem;
+                font-weight: bolder;
+            }
+            img{
+                background-color: $color-uno;
+                border-radius: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30rem;
+                height: auto;
+                
+                
+            }
+            p{
+                padding: 3rem;
+                font-size: larger;
+                font-weight: bolder;
+                text-align: center;    
+            }
+        }
+        
+        .hijoTres{
+            background-color: $color-cuatro;
+        }
+    }
+}
+
+/*estilos Home para tabletas */
+
+@media only screen and (min-width: 1112px) and (max-width: 1157px){
+    
+    .grid-uno{
+        display: flex;
+        flex-wrap: wrap;
+    
+        .hijoUno{
+           
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            background-color: $color-cinco;
+            
+            h3{
+                padding-top: 5rem;
+                margin: 5rem;
+                font-weight: bolder;
+            }
+            img{
+                background-color: $color-cuatro;
+                border-radius: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30rem;
+                height: auto;
+                align-items: center;
+                
+            }
+            p{
+                padding: 3rem;
+                font-size: larger;
+                font-weight: bolder;
+                text-align: center;    
+            }
+        }
+        
+        .hijoDos{
+            display: none;
+        }
+        
+        .hijoTres{
+            background-color: $color-cuatro;
+        }
+    }
+}
+/* estilos Home dispositivos móviles*/
+
+@media only screen and (min-width: 100px) and (max-width: 1111px){
+   
+    .grid-uno{
+        display: flex;
+        flex-wrap: wrap;
+
+        .hijoUno{
+           
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            background-color: $color-cinco;
+            
+            h3{
+                text-align: center;
+                padding-top: 5rem;
+                margin: 5rem;
+                font-weight: bolder;
+            }
+            img{
+                background-color: $color-cuatro;
+                border-radius: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30rem;
+                height: auto;
+                align-items: center;
+                
+            }
+            p{
+                padding: 3rem;
+                font-size: larger;
+                font-weight: bolder;
+                text-align: center;    
+            }
+        }
+        
+        .hijoDos{
+            display: none;
+        }
+        
+        .hijoTres{
+            background-color: $color-cuatro;
+        }
+    }
+
+}
+
+    
+    

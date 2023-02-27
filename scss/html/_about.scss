@@ -1,0 +1,34 @@
+//importar los archivos secundarios
+@import "../base/mixin.scss";
+@import "../vars/variabes";
+@import "../base/listas";
+
+
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    img{
+        width: 40%;
+        height: auto;
+    }
+    .about-section-dos{
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        h2{
+            font-size: 3rem;
+            text-align: center;
+        }
+        .parrafo-uno{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .parrafo-dos{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+}
+
+}
