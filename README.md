@@ -1,4 +1,4 @@
-# javaScript-entrega-1
+# javaScript-entregas
 TÍTULO DEL PROYECTO:
 Bitcoin Marketplace
 
