@@ -20,4 +20,6 @@ A las funcionalidades de la Entrega - 1 se le agregan las siguientes:
 - Se utiliza un Array con diferentes precios de BTC dependiendo de la moneda que el usuario quiera a cambio por la venta.  Se puede escoger entre 4 monedas.
 - Se agrega un nuevo formulario en caso que el cliente desee que se le envíe la cotización a su correo indicando la fecha y la hora de la cotización con un alert.
 
+USO DE JAVASCRIPT - Re-Entrega 2:
+Nuevas funciones para divisas (línea 23-43), recolectar información para envío de correo y almacenamiento para formato csv (línea 76-99).  Se utiliza el método map para crear el nuevo Array de monedas disponibles (línea 36-37) y se agregan las variables a la consola y las alertas.
 
