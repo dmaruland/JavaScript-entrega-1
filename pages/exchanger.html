@@ -8,7 +8,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
       <!--Link MI CSS-->
-      <link rel="stylesheet" href="/css/estilos.css">
+      <link rel="stylesheet" href="../css/estilos.css">
     <title>Exchanger</title>
 </head>
 <body>
@@ -49,59 +49,130 @@
             </nav>
       </header>
       
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, cum quasi unde possimus doloremque aliquid repellat voluptatibus commodi natus nam pariatur porro. Quis, perferendis inventore cum fuga nostrum similique libero.</p>
+      <p id="mensajeMenorEdad">Ingresa tu edad para continuar</p>
       
-     
-  
-      <footer>
-  
-        <section class="footer-info">
-          <img class="footer-info-img" src="../img/LOGO_-12.png" alt="">
-         
-          <section> 
-            <h2>ÚNETE</h2>
-            <p>Para mayor información suscríbete a nuestro boletín</p>
-            <div class="input-group mb-3 justify-content-center">
-              <input type="text" class="form-control-sm" placeholder="Ingresar e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
-            </div>
-          </section>
-  
-          <section class="footer-info-dos">
-            <h2>ENLACES</h2>
-              <div>
-                  <nav>
-                      <ul>
-                      <li><a href="contacto.html">CONTACTO</a> 
-                      </li>
-                      <li><a href="../pages/about.html">NOSOTROS</a> </li>
-                      <li>TÉRMINOS & CONDICIONES</li>
-                      </ul>
-                   </nav>
-              </div>
-          </section>
-  
-          <section class="footer-info-tres">
-            <h2>GET IN TOUCH</h2>
-            <H6>contáctanos a info@email.com</H6>
-            <section class="redes-sociales">
-              <img src="../img/twitter-logo-bw.png" alt="twitter-logo">
-              <img src="../img/instagram-logo-bw.png" alt="instagram-logo">
-              <img src="../img/youtube-logo-bw.png" alt="">
-              <h6>Cr 27C # 43A-135</h6>
-            </section>
-          </section>
-        </section> 
+      
+       Ingresa tu edad:<input id="edad"><br/>
+      
+      <button class="money-exchanger" onclick="verificar()">Verificar</button>
+    
+    <div id="simulador" style= "display:none;" class="money-exchanger">
+        <h2>Exchanger de Bitcoin y USDT a FIAT</h2>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" />
+        <br />
+        <label for="from">Desde:</label>
+        <select id="from">
+            <option value="BTC">BTC</option>
+            <option value="USDT">USDT</option>
           
-        <section class="medio-pago-uno">
-            <div class="medio-pago">
-              <h6>Medio de pago aceptado</h6>
-              <img src="../img/bitcoin-logo-png.webp" alt="Bitcoin">
+        </select>
+        <br />
+        <label for="to">Hacia:</label>
+        <select id="to">
+            <option value="USD">USD</option>
+            <option value="COP">COP</option>
+            <option value="PEN">PEN</option>
+            <option value="CLP">CLP</option>
+               
+        </select>
+        <br />
+        <button onclick="exchange() ; comisionAplicada()">Cotizar</button>
+        <p id="result"></p>
+        <p id="resultadoComision"></p>
+        <p id="totalConComision"></p>
+
+        <button onclick="" id="open-modal">Procesar Cotización</button>
+
+    <div id="modal" class="modal">
+      <section class="form-sent-frame">
+        <p id="cotizacionEnviada" class="form-sent"> La cotización ha sido enviada con éxito</p>
+      </section>  
+      
+        <div id="modalContent" class="modal-content">
+            <h2>Ingresa los siguientes datos para enviarte la cotización</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="nombre" name="name" required>
+                
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">ID:</label>
+                <input type="number" id="identificacion" name="identificacion" required>
+                
+                
+              </form>
+             
+            <section>
+              <button class="pop-up" id="Enviar">Enviar</button>
+              <button class="pop-up"  id="Salir">Salir</button>
+              <p id="result"></p>
+              <p id="resultadoComision"></p>
+              <p id="totalConComision"></p>
+            </section>  
+            
+            
+        </div>
+    </div>
+
+    
+
+      </div>
+  <footer>
+
+    <footer>
+
+      <section class="footer-info">
+        <img class="footer-info-img" src="../img/LOGO_-12.png" alt="">
+       
+        <section> 
+          <h2>ÚNETE</h2>
+          <p>Para mayor información suscríbete a nuestro boletín</p>
+          <div class="input-group mb-3 justify-content-center">
+            <input type="text" class="form-control-sm" placeholder="Ingresar e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+          </div>
+        </section>
+
+        <section class="footer-info-dos">
+          <h2>ENLACES</h2>
+            <div>
+                <nav>
+                    <ul>
+                    <li><a href="contacto.html">CONTACTO</a> 
+                    </li>
+                    <li><a href="../pages/about.html">NOSOTROS</a> </li>
+                    <li>TÉRMINOS & CONDICIONES</li>
+                    </ul>
+                 </nav>
             </div>
         </section>
-        <div class="copyright">&copy; Todos los derechos reservados</div>
-  
+
+        <section class="footer-info-tres">
+          <h2>GET IN TOUCH</h2>
+          <H6>contáctanos a info@email.com</H6>
+          <section class="redes-sociales">
+            <img src="../img/twitter-logo-bw.png" alt="twitter-logo">
+            <img src="../img/instagram-logo-bw.png" alt="instagram-logo">
+            <img src="../img/youtube-logo-bw.png" alt="">
+            <h6>Cr 27C # 43A-135</h6>
+          </section>
+        </section>
+      </section> 
+        
+      <section class="medio-pago-uno">
+          <div class="medio-pago">
+            <h6>Medio de pago aceptado</h6>
+            <img src="../img/bitcoin-logo-png.webp" alt="Bitcoin">
+          </div>
+      </section>
+      <div class="copyright">&copy; Todos los derechos reservados</div>
+
+</footer>
+
   </footer>
+  
   
     
      
