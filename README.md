@@ -23,3 +23,7 @@ A las funcionalidades de la Entrega - 1 se le agregan las siguientes:
 USO DE JAVASCRIPT - Re-Entrega 2:
 Nuevas funciones para divisas (línea 23-43), recolectar información para envío de correo y almacenamiento para formato csv (línea 76-99).  Se utiliza el método map para crear el nuevo Array de monedas disponibles (línea 36-37) y se agregan las variables a la consola y las alertas.
 
+USO DE JAVASCRIPT - ENTREGA 3:
+Para esta entrega se hacen grandes cambios en el código al enlazarlo con el HTML.  Los inputs con los que trabaja el sistema ya no se obtienen a través de prompts sino mediante cajas de texto en el HTML usando DOM.
+Se utiliza el localStorage para almacenar los pares Crito/FIAT seleccionados por el usuario.
+Se usan eventos onclick en los botones para aumentar la interacción y hacer que aparezcan y desaparezcan elementos en el HTML.
