@@ -27,3 +27,8 @@ USO DE JAVASCRIPT - ENTREGA 3:
 Para esta entrega se hacen grandes cambios en el código al enlazarlo con el HTML.  Los inputs con los que trabaja el sistema ya no se obtienen a través de prompts sino mediante cajas de texto en el HTML usando DOM.
 Se utiliza el localStorage para almacenar los pares Crito/FIAT seleccionados por el usuario.
 Se usan eventos onclick en los botones para aumentar la interacción y hacer que aparezcan y desaparezcan elementos en el HTML.
+
+USO JAVA SCRIPT - ENTREGA FINAL
+Se agrega un banner asincrónico invitando a anunciar una marca.
+Unos productos de la página productList.html se generan con una clase, se almacenan en un Array y luego se muestran en el HTML utilizando map() y forEach.
+Se implementó Sweet Alert para los pop up de alertas de edad
